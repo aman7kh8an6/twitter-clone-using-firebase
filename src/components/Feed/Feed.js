@@ -3,19 +3,26 @@ import Post from '../Post/Post';
 import TweetBox from '../TweetBox/TweetBox';
 import './Feed.css';
 import db from '../../firebase';
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, onSnapshot } from "firebase/firestore";
 import FlipMove from "react-flip-move";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
 
+  // useEffect(() => {
+  //   const colRef = collection(db, "posts");
+  //   getDocs(colRef).then((snapshot)=>{
+  //     setPosts(snapshot.docs.map(doc => doc.data()))
+  //   })
+  // }, [])
+ 
   useEffect(() => {
     const colRef = collection(db, "posts");
-    getDocs(colRef).then((snapshot)=>{
-      setPosts(snapshot.docs.map(doc => doc.data()))
+
+    onSnapshot(colRef, snapshot => {
+      setPosts(snapshot.docs.map(doc=> doc.data()));
     })
-  }, [])
- 
+  },[]);
   
   return (
     <div className='feed'>

@@ -1,0 +1,66 @@
+[debug] [2022-01-24T06:01:22.120Z] ----------------------------------------------------------------------
+[debug] [2022-01-24T06:01:22.122Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-01-24T06:01:22.123Z] CLI Version:   10.1.2
+[debug] [2022-01-24T06:01:22.123Z] Platform:      win32
+[debug] [2022-01-24T06:01:22.123Z] Node Version:  v16.13.1
+[debug] [2022-01-24T06:01:22.124Z] Time:          Mon Jan 24 2022 11:31:22 GMT+0530 (India Standard Time)
+[debug] [2022-01-24T06:01:22.124Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-24T06:01:22.194Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-24T06:01:22.194Z] > authorizing via signed-in user (aman7kh8an6@gmail.com)
+[debug] [2022-01-24T06:01:22.194Z] [iam] checking project twitter-clone-3b8f4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-24T06:01:22.198Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-3b8f4:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-24T06:01:24.247Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 24 Jan 2022 06:01:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1358","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-24T06:01:24.259Z] > refreshing access token with scopes: []
+[debug] [2022-01-24T06:01:24.260Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-24T06:01:24.861Z] <<< HTTP RESPONSE 200 {"date":"Mon, 24 Jan 2022 06:01:24 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-24T06:01:24.912Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-3b8f4 [none]
+[debug] [2022-01-24T06:01:36.073Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/twitter-clone-3b8f4
+[debug] [2022-01-24T06:01:40.305Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/twitter-clone-3b8f4
+    at Client.doRequest (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:213:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.request (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async getDefaultHostingSite (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
+    at async C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project twitter-clone-3b8f4. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-01-24T06:02:44.801Z] ----------------------------------------------------------------------
+[debug] [2022-01-24T06:02:44.803Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-01-24T06:02:44.804Z] CLI Version:   10.1.2
+[debug] [2022-01-24T06:02:44.804Z] Platform:      win32
+[debug] [2022-01-24T06:02:44.804Z] Node Version:  v16.13.1
+[debug] [2022-01-24T06:02:44.805Z] Time:          Mon Jan 24 2022 11:32:44 GMT+0530 (India Standard Time)
+[debug] [2022-01-24T06:02:44.806Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-24T06:02:44.872Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-24T06:02:44.872Z] > authorizing via signed-in user (aman7kh8an6@gmail.com)
+[debug] [2022-01-24T06:02:44.873Z] [iam] checking project twitter-clone-3b8f4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-24T06:02:44.876Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-24T06:02:44.877Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-24T06:02:45.538Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 24 Jan 2022 06:02:44 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-24T06:02:45.589Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-3b8f4:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-24T06:02:47.385Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 24 Jan 2022 06:02:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1368","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-24T06:02:47.392Z] > refreshing access token with scopes: []
+[debug] [2022-01-24T06:02:47.393Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-24T06:02:47.946Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 24 Jan 2022 06:02:47 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-24T06:02:48.002Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-3b8f4 [none]
+[debug] [2022-01-24T06:02:59.140Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/twitter-clone-3b8f4
+[debug] [2022-01-24T06:03:00.063Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/twitter-clone-3b8f4
+    at Client.doRequest (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:213:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.request (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async getDefaultHostingSite (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
+    at async C:\Users\Aman Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project twitter-clone-3b8f4. Please make sure the project exists and your account has permission to access it.
